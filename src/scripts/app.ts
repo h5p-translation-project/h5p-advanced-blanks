@@ -265,16 +265,16 @@ export default class AdvancedBlanks extends (H5P.Question as { new(): any; }) {
   /****************************************
    * Implementation of Question contract  *
    ****************************************/
-  public getAnswerGiven = () : boolean => {
+  public getAnswerGiven = (): boolean => {
     return true;
     // TODO: implement
   }
 
-  public getScore = () : number => {
+  public getScore = (): number => {
     return this.clozeController.currentScore;
   }
 
-  public getMaxScore = () : number => {
+  public getMaxScore = (): number => {
     return this.clozeController.maxScore;
   }
 
